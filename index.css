@@ -78,13 +78,8 @@ h3 {
     margin-left: -1.4em;
 }
 
-.btn:active {
-	transform: scale(0.98);
-}
 
-.btn:focus {
-	outline: 0;
-}
+
 
 
 
@@ -111,7 +106,7 @@ h3 {
 
 	.joke {
 		font-size: 20px;
-		letter-spacing: 1px;
+		letter-spacing: 1px;                            
 		line-height: 22px;
 		margin: 50px auto;
 		max-width: 600px;		
