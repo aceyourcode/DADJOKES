@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Poppins', sans-serif;
+	
+	height: 100vh;
+	background-color: #202124;
+	transition: all .3s ease;
+}
+
+.container {
+	background-color: #383a41;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+	padding: 50px 20px;
+	text-align: center;
+	max-width: 100%;
+	width: 800px;
+    transition: all .3s ease;
+}
+
+h3 {
+    opacity: .5;
+    	letter-spacing: 2px;
+	margin: 0;
+    font-weight: 700;
+    color: #D3FFF3;
+}
+
+.joke {
+	font-size: 30px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	margin: 50px auto;
+	max-width: 600px;
+    font-family: 'Lexend Mega', sans-serif;
+    transition: all .3s ease;
+    letter-spacing: -2px;
+    color: #D3FFF3;
+}
+
+
+
+.btn {
+	background-color: #2176FF;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 14px 40px;
+	font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn svg{
+    position: absolute;
+    margin-top: .1em;
+    margin-left: -1.4em;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+
+
+.show-anim {
+	animation: rotate-center 0.6s ease-in-out both;
+}
+
+@keyframes rotate-center {
+	0% {
+	  transform: rotate(0) scale(0);	 
+	}
+	100% {
+	  transform: rotate(360deg) scale(0.9);
+	}
+  }
+
+
+
+  @media only screen and (max-width: 845px) {
+	.container {
+		max-width: 100%;
+		width: 700px;	
+	}
+
+	.joke {
+		font-size: 20px;
+		letter-spacing: 1px;
+		line-height: 22px;
+		margin: 50px auto;
+		max-width: 600px;		
+	}
+	
+
+  }
+
+
+  @media only screen and (max-width: 425px) {
+	.container {
+		max-width: 100%;
+		width: 600px;	
+	}
+
+	.joke {
+		font-size: 18px;
+		letter-spacing: 1px;
+		line-height: 22px;
+		margin: 30px auto;
+		max-width: 600px;		
+	}
+	
+
+  }
